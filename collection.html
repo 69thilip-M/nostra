@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra Colllections</title>
+    <!--=====custom css=====-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--=====Font awesome cdn=====-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--=====Bonus=====-->
+    <div class="bonus">
+      <h3 class="bonus_h3">
+        Sign up and <span class="bonus_h3-span">GET 20% OFF</span> for your
+        first order
+      </h3>
+      <h1 class="bonus_close" onclick="hideBonus()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="30px"
+          viewBox="0 -960 960 960"
+          width="30px"
+          fill="#e8eaed"
+        >
+          <path
+            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+          />
+        </svg>
+      </h1>
+    </div>
+    <!--=====Bonus end=====-->
+    <!--=====Navbar=====-->
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html" class="nav_menu hover">Home</a></li>
+        <li><a href="#" class="nav_menu hover">New Arrival</a></li>
+        <li><a href="#" class="nav_menu hover">Most Wanted</a></li>
+        <li><a href="collection.html" class="nav_menu hover">Collection</a></li>
+        <li><a href="contact.html" class="nav_menu hover">Contact Us</a></li>
+        <li><a href="#" class="nav_menu hover">Log In</a></li>
+      </ul>
+      <ul>
+        <li><a href="#" class="nav_logo">Nostra</a></li>
+        <li class="hideOnMobile">
+          <a href="index.html" class="nav_menu hover">Home</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#" class="nav_menu hover">New Arrival</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#" class="nav_menu hover">Most Wanted</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="collection.html" class="nav_menu hover">Collections</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="contact.html" class="nav_menu hover">Contact Us</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#" class="nav_menu hover">Log In</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!--=====Navbar end=====-->
+
+    <!--=====Body  collection=====-->
+    <section class="collectionSection">
+      <div class="collections">
+        <div class="collections_content1">
+          <div>
+            <div class="collection1">
+              <h1>Occasion</h1>
+
+              <div class="collections_checkbox">
+                <div class="collections_checkbox-content">
+                  <input type="checkbox" />
+                  <h3>Summer</h3>
+                </div>
+
+                <div class="collections_checkbox-content">
+                  <input type="checkbox" />
+                  <h3>Party</h3>
+                </div>
+
+                <div class="collections_checkbox-content">
+                  <input type="checkbox" />
+                  <h3>Beach</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="collection1">
+              <h1>Colors</h1>
+
+              <div class="collections_checkbox">
+                <div class="collections_checkbox-content">
+                  <input type="checkbox" />
+                  <h3>Red</h3>
+                </div>
+
+                <div class="collections_checkbox-content">
+                  <input type="checkbox" />
+                  <h3>Blue</h3>
+                </div>
+
+                <div class="collections_checkbox-content">
+                  <input type="checkbox" />
+                  <h3>White</h3>
+                </div>
+
+                <div class="collections_checkbox-content">
+                  <input type="checkbox" />
+                  <h3>Black</h3>
+                </div>
+
+                <div class="collections_checkbox-content">
+                  <input type="checkbox" />
+                  <h3>Green</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="collection1">
+              <h1>Arrivals</h1>
+
+              <div class="collections_checkbox">
+                <div class="collections_checkbox-content">
+                  <input type="checkbox" />
+                  <h3>New</h3>
+                </div>
+
+                <div class="collections_checkbox-content">
+                  <input type="checkbox" />
+                  <h3>Old</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collection_content2">
+          <div class="vertical"></div>
+
+          <div>
+            <div class="collection_content2-search">
+              <input type="text" placeholder="search" id="search" /><i
+                class="fa-solid fa-magnifying-glass"
+              ></i>
+            </div>
+
+            <div class="collection_content2-flex">
+              <div class="collection_content2-card">
+                <img src="/assets/images/collection/f1.jpg" alt="shirt" />
+                <h3>Floral Summer Shirt</h3>
+                <p>₹220</p>
+              </div>
+
+              <div class="collection_content2-card">
+                <img src="/assets/images/collection/f2.jpg" alt="shirt" />
+                <h3>Summer Green</h3>
+                <p>₹260</p>
+              </div>
+
+              <div class="collection_content2-card">
+                <img src="/assets/images/collection/f3.jpg" alt="shirt" />
+                <h3>Party Floral Shirt</h3>
+                <p>₹399</p>
+              </div>
+            </div>
+
+            <div class="collection_content2-flex2">
+              <div class="collection_content2-card">
+                <img src="/assets/images/collection/f4.jpg" alt="shirt" />
+                <h3>Floral Winter Shirt</h3>
+                <p>₹399</p>
+              </div>
+
+              <div class="collection_content2-card">
+                <img src="/assets/images/collection/f5.jpg" alt="shirt" />
+                <h3>Beach Shirt</h3>
+                <p>₹579</p>
+              </div>
+
+              <div class="collection_content2-card">
+                <img src="/assets/images/collection/f6.jpg" alt="shirt" />
+                <h3>Shirt Party Red</h3>
+                <p>₹579</p>
+              </div>
+            </div>
+
+            <div class="collection_content2-flex3">
+              <div class="collection_content2-card">
+                <img src="/assets/images/collection/f3.jpg" alt="shirt" />
+                <h3>Party Floral Shirt</h3>
+                <p>₹399</p>
+              </div>
+
+              <div class="collection_content2-card">
+                <img src="/assets/images/collection/n7.jpg" alt="shirt" />
+                <h3>Shirt Party Red</h3>
+                <p>₹579</p>
+              </div>
+
+              <div class="collection_content2-card">
+                <img src="/assets/images/collection/n8.jpg" alt="shirt" />
+                <h3>Floral Summer Shirt</h3>
+                <p>₹220</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====Body  collection  end=====-->
+    <!--=====News Letter=====-->
+    <section class="news_letter">
+      <div class="news_letter_content">
+        <h1>Join our News Letter</h1>
+        <p>
+          Signup for our email newspaper to get exclusive discounts, updates,
+          and more
+        </p>
+        <input type="text" />
+        <a href="">Submit <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+    <!--=====News Letter end=====-->
+
+    <!--=====Footer=====-->
+    <section class="foorter">
+      <div class="foorter_content">
+        <h1>Nostra</h1>
+        <p>
+          The Standard chunk of Lorem ipsum used since the 1500s is reprodused
+          below for those interest.
+        </p>
+        <div class="foorter_content-icon">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>Copyright &copy; 2024 Nostra.com</p>
+      </div>
+    </section>
+    <!--=====Footer end=====-->
+    <!--=====custom script=====-->
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra</title>
+    <!--=====custom css=====-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--=====Font awesome cdn=====-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--=====Bonus=====-->
+    <div class="bonus">
+      <h3 class="bonus_h3">
+        Sign up and <span class="bonus_h3-span">GET 20% OFF</span> for your
+        first order
+      </h3>
+      <h1 class="bonus_close" onclick="hideBonus()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="30px"
+          viewBox="0 -960 960 960"
+          width="30px"
+          fill="#e8eaed"
+        >
+          <path
+            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+          />
+        </svg>
+      </h1>
+    </div>
+    <!--=====Bonus end=====-->
+    <!--=====Navbar=====-->
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html" class="nav_menu hover">Home</a></li>
+        <li><a href="#" class="nav_menu hover">New Arrival</a></li>
+        <li><a href="#" class="nav_menu hover">Most Wanted</a></li>
+        <li><a href="collection.html" class="nav_menu hover">Collection</a></li>
+        <li><a href="contact.html" class="nav_menu hover">Contact Us</a></li>
+        <li><a href="#" class="nav_menu hover">Log In</a></li>
+      </ul>
+      <ul>
+        <li><a href="#" class="nav_logo">Nostra</a></li>
+        <li class="hideOnMobile">
+          <a href="index.html" class="nav_menu hover">Home</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#" class="nav_menu hover">New Arrival</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#" class="nav_menu hover">Most Wanted</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="collection.html" class="nav_menu hover">Collections</a>
+        </li>
+
+        <li class="hideOnMobile">
+          <a href="contact.html" class="nav_menu hover">Contact Us</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#" class="nav_menu hover">Log In</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!--=====Navbar end=====-->
+
+    <!--=====Hero section=====-->
+    <section class="hero">
+      <img
+        src="./assets/images/hero/slider-one.jpg"
+        alt="hero-banner"
+        class="hero_img"
+      />
+    </section>
+    <!--=====Hero section end=====-->
+
+    <!--=====Brands=====-->
+    <section class="brands">
+      <div>
+        <h1>Brands</h1>
+
+        <div class="brands_flex">
+          <div class="brands_flex-content">
+            <img src="./assets/images/brands/adidas.png" alt="brand-img" />
+            <h2>Puma</h2>
+          </div>
+          <div class="brands_flex-content">
+            <img src="./assets/images/brands/behance.png" alt="brand-img" />
+            <h2>Adidas</h2>
+          </div>
+          <div class="brands_flex-content">
+            <img src="./assets/images/brands/simple.png" alt="brand-img" />
+            <h2>Behance</h2>
+          </div>
+          <div class="brands_flex-content">
+            <img src="./assets/images/brands/leaves.png" alt="brand-img" />
+            <h2>Leaves</h2>
+          </div>
+          <div class="brands_flex-content">
+            <img src="./assets/images/brands/twitch.png" alt="brand-img" />
+            <h2>Hangouts</h2>
+          </div>
+          <div class="brands_flex-content">
+            <img src="./assets/images/brands/behance.png" alt="brand-img" />
+            <h2>DapperX</h2>
+          </div>
+          <div class="brands_flex-content">
+            <img src="./assets/images/brands/adidas.png" alt="brand-img" />
+            <h2>Corizo</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====Brands end=====-->
+
+    <!--=====Customer experiences=====-->
+    <section class="customers">
+      <div class="customers_content1">
+        <div>
+          <h1 class="customers_content1-firsth1">We provide Best</h1>
+          <h1 class="customers_content1-firsth1">Customer Experiences</h1>
+        </div>
+
+        <h1 class="customers_content1-secondh1">
+          || We ensure that our customer have the best shopping experience
+        </h1>
+      </div>
+
+      <!--card-->
+      <div class="customers_cards">
+        <div class="customers_cards-content">
+          <i class="fa-regular fa-face-smile"></i>
+          <h2>Original Products</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+            fuga.
+          </p>
+        </div>
+
+        <div class="customers_cards-content">
+          <i class="fa-regular fa-circle-check"></i>
+          <h2>Original Products</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+            fuga.
+          </p>
+        </div>
+
+        <div class="customers_cards-content">
+          <i class="fa-solid fa-paintbrush"></i>
+          <h2>Original Products</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+            fuga.
+          </p>
+        </div>
+
+        <div class="customers_cards-content">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h2>Original Products</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+            fuga.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--=====Customer experiences end=====-->
+
+    <!--=====New Arrivals=====-->
+    <section class="newArrivals">
+      <div>
+        <h1>New Arrivals</h1>
+
+        <div class="newArrivals_card">
+          <div class="newArrivals_card-content">
+            <img src="./assets/images/new_arrivals/f1.jpg" alt="shirt-img" />
+            <div class="overlay"></div>
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="newArrivals_card-content">
+            <img src="./assets/images/new_arrivals/f7.jpg" alt="shirt-img" />
+            <div class="overlay"></div>
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          ̥̥
+          <div class="newArrivals_card-content">
+            <img src="./assets/images/new_arrivals/n1.jpg" alt="shirt-img" />
+            <div class="overlay"></div>
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="newArrivals_card-content">
+            <img src="./assets/images/new_arrivals/n7.jpg" alt="shirt-img" />
+            <div class="overlay"></div>
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====New Arrivals end=====-->
+
+    <!--=====most wanted=====-->
+    <section class="newArrivals">
+      <div>
+        <h1>Most Wanted</h1>
+
+        <div class="newArrivals_card">
+          <div class="newArrivals_card-content">
+            <img
+              src="./assets/images/most_wanted/f1.jpg"
+              alt="shirt-img"
+              class="mostwanted_img"
+            />
+            <h4>Sale</h4>
+            <i class="fa-regular fa-heart" id="mostwanted_icon"></i>
+          </div>
+          <div class="newArrivals_card-content">
+            <img
+              src="./assets/images/most_wanted/n1.jpg"
+              alt="shirt-img"
+              class="mostwanted_img"
+            />
+            <h4>Sale</h4>
+            <i class="fa-regular fa-heart" id="mostwanted_icon"></i>
+          </div>
+          ̥̥
+          <div class="newArrivals_card-content">
+            <img
+              src="./assets/images/most_wanted/n7.jpg"
+              alt="shirt-img"
+              class="mostwanted_img"
+            />
+            <h4>Sale</h4>
+            <i class="fa-regular fa-heart" id="mostwanted_icon"></i>
+          </div>
+          <div class="newArrivals_card-content">
+            <img
+              src="./assets/images/most_wanted/n8.jpg"
+              alt="shirt-img"
+              class="mostwanted_img"
+            />
+            <h4>Sale</h4>
+            <i class="fa-regular fa-heart" id="mostwanted_icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====Most wanted end=====-->
+
+    <!--=====Banner=====-->
+    <section class="banner">
+      <div class="banner_background">
+        <img src="./assets/images/banner/offer.jpg" alt="banner_img" />
+
+        <div class="banner_background-content">
+          <h1>Limited Offer</h1>
+          <h2>35% OFF on this for the first 30 Customers</h2>
+          <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+    <!--=====Banner end=====-->
+
+    <!--=====News Letter=====-->
+    <section class="news_letter">
+      <div class="news_letter_content">
+        <h1>Join our News Letter</h1>
+        <p>
+          Signup for our email newspaper to get exclusive discounts, updates,
+          and more
+        </p>
+        <input type="text" />
+        <a href="">Submit <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+    <!--=====News Letter end=====-->
+
+    <!--=====Footer=====-->
+    <section class="foorter">
+      <div class="foorter_content">
+        <h1>Nostra</h1>
+        <p>
+          The Standard chunk of Lorem ipsum used since the 1500s is reprodused
+          below for those interest.
+        </p>
+        <div class="foorter_content-icon">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>Copyright &copy; 2024 Nostra.com</p>
+      </div>
+    </section>
+    <!--=====Footer end=====-->
+    <!--=====custom script=====-->
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>
